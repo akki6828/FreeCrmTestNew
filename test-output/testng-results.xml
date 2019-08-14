@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="91756" started-at="2019-08-03T02:57:04Z" finished-at="2019-08-03T02:58:36Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="91756" started-at="2019-08-03T02:57:04Z" finished-at="2019-08-03T02:58:36Z">
+      <class name="com.crm.qa.testcase.ContactsPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcase.ContactsPageTest@d041cf]" name="setUp" is-config="true" duration-ms="44843" started-at="2019-08-03T08:27:04Z" finished-at="2019-08-03T08:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyContactsPageLabel()[pri:0, instance:com.crm.qa.testcase.ContactsPageTest@d041cf]" name="verifyContactsPageLabel" duration-ms="156" started-at="2019-08-03T08:27:49Z" finished-at="2019-08-03T08:27:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyContactsPageLabel -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcase.ContactsPageTest@d041cf]" name="tearDown" is-config="true" duration-ms="797" started-at="2019-08-03T08:27:49Z" finished-at="2019-08-03T08:27:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcase.ContactsPageTest@d041cf]" name="setUp" is-config="true" duration-ms="21066" started-at="2019-08-03T08:27:50Z" finished-at="2019-08-03T08:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="selectSingleContactsTest()[pri:0, instance:com.crm.qa.testcase.ContactsPageTest@d041cf]" name="selectSingleContactsTest" duration-ms="177" started-at="2019-08-03T08:28:11Z" finished-at="2019-08-03T08:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectSingleContactsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcase.ContactsPageTest@d041cf]" name="tearDown" is-config="true" duration-ms="764" started-at="2019-08-03T08:28:11Z" finished-at="2019-08-03T08:28:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.crm.qa.testcase.ContactsPageTest@d041cf]" name="setUp" is-config="true" duration-ms="20320" started-at="2019-08-03T08:28:12Z" finished-at="2019-08-03T08:28:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="selectMultipleContactsTest()[pri:0, instance:com.crm.qa.testcase.ContactsPageTest@d041cf]" name="selectMultipleContactsTest" duration-ms="424" started-at="2019-08-03T08:28:32Z" finished-at="2019-08-03T08:28:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectMultipleContactsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.crm.qa.testcase.ContactsPageTest@d041cf]" name="tearDown" is-config="true" duration-ms="724" started-at="2019-08-03T08:28:32Z" finished-at="2019-08-03T08:28:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="FAIL" signature="validateCreateNewContact(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.crm.qa.testcase.ContactsPageTest@d041cf]" name="validateCreateNewContact" duration-ms="0" started-at="2019-08-03T08:28:36Z" data-provider="getCRMTestData" finished-at="2019-08-03T08:28:36Z">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[java.lang.NullPointerException]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: java.lang.NullPointerException
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:143)
+	at org.testng.internal.Parameters.handleParameters(Parameters.java:426)
+	at org.testng.internal.Invoker.handleParameters(Invoker.java:1383)
+	at org.testng.internal.Invoker.createParameters(Invoker.java:1075)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1180)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:207)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:178)
+Caused by: java.lang.NullPointerException
+	at com.crm.qa.util.TestUtil.getTestData(TestUtil.java:55)
+	at com.crm.qa.testcase.ContactsPageTest.getCRMTestData(ContactsPageTest.java:63)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.MethodInvocationHelper.invokeDataProvider(MethodInvocationHelper.java:117)
+	... 20 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateCreateNewContact -->
+      </class> <!-- com.crm.qa.testcase.ContactsPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
